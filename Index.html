@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Techenical task -1 </title>
+    
+  </head>
+  <style type="text/css">
+     <style >
+
+     body{
+      margin: 0px;
+      padding: 0px;
+    } 
+
+   #navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    
+
+}
+    
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    opacity: .9;
+    
+    height: 60px;
+    width:100%;
+    z-index: -1;
+    
+}
+    #navbar{
+      display: flex;
+    }
+    #navbar ul li{
+      
+      list-style: none;
+      
+
+    }
+   #navbar ul li a{
+    color: white;
+
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: red;
+    
+   
+    background-color: yellow;
+}
+#search{
+  background-color: lightcyan;
+  border-radius: 29px;
+  padding: 0px 10px;
+
+  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 463px;
+  
+}
+#webwiz{
+  display: block;
+  color: yellow;
+
+
+
+  margin: 0px 400px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Licorice', cursive;
+
+  padding: 4px  12px;
+  padding-top: 34px;
+
+  /* border: 1px solid gray;
+  background-color: #BE90DC; */
+  border-radius: 20px;
+}
+.form{
+  color: white;
+}
+
+
+.loginpage{
+  border: 2px solid red ;
+  margin: 36px 173px;
+    height: 400px;
+    background-image: url('file:///E:/web%20development/webwiz/img.jpg');
+    opacity: .8;
+
+} 
+
+.login{
+  margin-top: 0px;
+}
+
+#emaill{
+  margin: auto 43px ;
+  padding: 54px;
+
+} 
+#background::before{
+  content: "";
+  background-image: url('https://th.bing.com/th/id/OIP.JIdT3rnQJnqNy-eaST_W7gHaEF?w=325&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7');
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+}
+#einpu{
+  border: 23px solid red;
+  padding: 23px;
+}
+
+.loginmake{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#intro{
+  
+  height: 350px;
+  margin: 0px 0px 0px 230px;
+  width: 300px;
+  background-image: url('file:///C:/Users/ASUS/Downloads/Screenshot_20220104-102745_WhatsApp.jpg');
+  background-repeat: no-repeat;
+  background-size: 300px 350px;
+
+}
+#login{
+  background-color: white;
+  margin: 0px 0px 0px 0px ;
+  
+  height: 350px;
+  width: 428px;
+  
+}
+#loginhead{
+  display: block;
+  text-align: center;
+  
+}
+#headlogin{
+  color: #2940B6;
+}
+.usernamerow{
+  margin-top: 56px;
+}
+.passwordrow{
+  margin-top: 40px;
+}
+#password{
+    margin-left: 5px;
+    padding: 5px;
+}
+#Username{
+ 
+  margin: 23px 12px 48px 42px;
+}
+#passwordtext{
+      margin-right: 16px;
+    margin-left: 66px;
+    font-size: 1.2rem;
+}
+#enteremail{
+  margin: 2px;
+  padding: 3px;
+}
+.submit{
+  color: white;
+  padding: 2px 72px ;
+  padding-top: 4px;
+  border: none;
+  margin: 43px 122px;
+  background-color: cyan;
+
+  font-size: 1.5rem;
+}
+#forgot_password{
+  margin-top: -27px;
+  text-align: center;
+
+}
+
+#forgot_password a:hover{
+  background-color: yellow;
+  border-radius: 19px;
+
+  
+}
+
+ </style>
+  </style>
+   
+  <body>
+
+    <nav id="navbar">
+        
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#About">About</a></li>
+            <li class="item"><a href="#Contactus">Contact us</a></li>
+            <li class="item"><a href="#Help ">Help</a></li>
+             <input  id="search" type="search"  name="Search here"  value= "Google" >
+        </ul>
+    </nav>
+    <div id="background">
+
+    <section class="login">
+      <h1 id="webwiz">Welcome to WEBWIZ</h1>
+    </section>
+
+           
+
+
+      <div class="loginmake">
+        <div id="intro"></div>
+        <div id="login">
+          <form  action=" ">
+
+        <h3 id="loginhead"> <span id="headlogin">Log in</span> to your accout </h3>
+        <div class="usernamerow">
+        <label id="Username">Username / Email :
+        </label>
+
+        <input  id="enteremail" type="email/Username" name="">
+      </div>
+         <div class="passwordrow">
+        <label id="passwordtext">Password : </label>
+        <input id="password" type="password" name="#">
+      </div>
+      <div id="button">
+        <button  class="submit" onclick="alert('You have Logged in l');" type="Submit">LogIn</button>
+      </div>
+      </form>
+      <div id="forgot_password">
+
+
+          <a href="#"  onclick="alert('You have forgotten your password');">Forgot Password </a>
+        </div>
+        </div>
+      </div>
+
+      
+
+
+    </div>
+    
+    </div>
+
+  </body>
+</html>
+
+
